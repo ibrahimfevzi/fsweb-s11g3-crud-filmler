@@ -65,3 +65,15 @@ const App = (props) => {
 };
 
 export default App;
+
+/* KENDİME NOTLAR :)
+
+EditMovieForm route'una id'yi göndermek için:
+<Route path="/movies/edit/:id">
+  <EditMovieForm setMovies={setMovies} />
+</Route>
+SetMovies'i EditMovieForm'a göndermemin sebebi,
+EditMovieForm'da bir film düzenlendiğinde, App.js'teki
+movies state'ini güncellemek.
+
+*/

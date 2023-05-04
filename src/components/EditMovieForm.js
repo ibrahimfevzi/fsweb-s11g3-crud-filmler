@@ -124,3 +124,14 @@ const EditMovieForm = (props) => {
 };
 
 export default EditMovieForm;
+
+/* KENDİME NOTLAR:
+- useParams hook'unu kullanarak, URL'den gelen id'yi alıyoruz.
+- useEffect hook'unu kullanarak, id değiştiğinde, o id'ye ait filmi getiriyoruz.
+- handleSubmit fonksiyonunda, axios.put ile, o id'ye ait filmi güncelliyoruz.
+- handleSubmit fonksiyonunda, setMovies ile, movies state'ini güncelliyoruz.
+- handleSubmit fonksiyonunda, push ile, o id'ye ait filmi gösteren sayfaya yönlendiriyoruz.
+- handleChange fonksiyonunda, setMovie ile, movie state'ini güncelliyoruz.
+- handleChange fonksiyonunda, [e.target.name]: e.target.value ile, inputlardaki değişiklikleri yakalıyoruz.
+- Submit butonu yazısını "Güncelle" olarak değiştirdim.
+*/
